@@ -1,0 +1,10 @@
+So, this is supposed to be a little play project to make a "bullshit bingo"
+card generator. Its also to help me learn a bit about javascript, so its probably
+a bit shit. Too bad.
+
+/x1101
+
+[] Take in a word list
+[] Define rows x cols (5x5 is ideal)
+[] randomize rxc setup to make a "unique" board
+[] output this in a way that doesn't suck
