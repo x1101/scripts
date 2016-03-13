@@ -4,7 +4,12 @@ a bit shit. Too bad.
 
 /x1101
 
-[] Take in a word list
-[] Define rows x cols (5x5 is ideal)
-[] randomize rxc setup to make a "unique" board
-[] output this in a way that doesn't suck
+[x] Take in a word list
+[x] randomize rxc setup to make a "unique" board
+[x] output this in a way that doesn't suck
+[ ] Define (defualt) rows x cols (5x5 is ideal)
+[ ] option for free space -- need to actully add free space
+[ ] text for free space
+[ ] option for title
+[ ] export to image of some kind
+[ ] option to make multiple boards

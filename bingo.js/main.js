@@ -14,7 +14,9 @@ function numEntries()
 {
   cols = document.getElementById('cols').value;
   rows = document.getElementById('rows').value;  
-  return rows*cols;
+  freeSpace = document.getElementById('freespace').checked;
+  if (freeSpace){ return rows*cols-1;}
+  else {return rows*cols;}
 }
 
 /*
@@ -23,7 +25,9 @@ function numEntries()
 */
 function mkTable ()
 {
-  var contents = '<table>';
+  var e = document.getElementById("txt");
+  e.style.display = 'none';
+  var contents = '<table><th colspan="' + cols + '">Bullshit Bingo</th>';
   var werds = document.getElementById('wordlist').value.split("\n");
   var len = werds.length;
   // fail if we have less entires than we need

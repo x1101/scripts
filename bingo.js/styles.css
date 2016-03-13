@@ -1,6 +1,17 @@
+html {
+  font-family: "Courier New", Courier, monospace;
+}
 #greeting {
   background-color: #F8F8F8;
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
   margin: 15px;
+}
+
+table, td
+{
+  border: 1px solid black;  
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
 }
