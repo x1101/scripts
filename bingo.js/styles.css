@@ -15,3 +15,13 @@ table, td
   padding: 5px;
   text-align: center;
 }
+
+td a
+{
+  display: block;
+  width 100%;
+}
+
+#clicked {
+  background: green;
+}

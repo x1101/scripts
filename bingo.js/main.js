@@ -43,9 +43,11 @@ function mkTable ()
   {
     contents += '<br />\n<tr>\n';
     for (j=0; j < cols; j++)
-    {
+    {     
+          cell = 'c' + i + 'x' + j;
+          //console.log(cell);
           werd = werds[randInt(0,remLen -1)];
-          contents+='<td>' + werd + "</td>";
+          contents+='<td id="' + cell + '"><a href="#" onclick="cellToggle(this.id);">' + werd + "</a></td>";
           werds.splice(werds.indexOf(werd),1);
           remLen --;
     }
@@ -53,4 +55,12 @@ function mkTable ()
   }
   contents += '\n</table>';
   document.getElementById("table").innerHTML = contents;
+}
+
+function cellToggle (cell)
+{
+ // stub
+  console.log(cell);
+  var d = document.getElementById(cell);
+  d.className += "clicked";
 }
