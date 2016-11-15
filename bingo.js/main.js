@@ -57,10 +57,10 @@ function mkTable ()
   document.getElementById("table").innerHTML = contents;
 }
 
-function cellToggle (cell)
+function cellToggle (cell_id)
 {
  // stub
-  console.log(cell);
-  var d = document.getElementById(cell);
+  console.log(cell_id);
+  var d = document.getElementById(cell_id);
   d.className += "clicked";
 }
