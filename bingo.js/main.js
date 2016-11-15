@@ -47,7 +47,7 @@ function mkTable ()
           cell = 'c' + i + 'x' + j;
           //console.log(cell);
           werd = werds[randInt(0,remLen -1)];
-          contents+='<td id="' + cell + '"><a href="#" onclick="cellToggle(this.id);">' + werd + "</a></td>";
+          contents+='<td id="' + cell + '"><a href="#" onclick="cellToggle(this);">' + werd + "</a></td>";
           werds.splice(werds.indexOf(werd),1);
           remLen --;
     }
@@ -57,9 +57,11 @@ function mkTable ()
   document.getElementById("table").innerHTML = contents;
 }
 
-function cellToggle (cell_id)
+
+function cellToggle (cellID)
 {
  // stub
+  cell_id = cellID.attributes["id"];
   console.log(cell_id);
   var d = document.getElementById(cell_id);
   d.className += "clicked";
