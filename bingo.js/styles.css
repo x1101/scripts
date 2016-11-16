@@ -22,6 +22,6 @@ td a
   width 100%;
 }
 
-#clicked {
+.clicked {
   background: green;
 }
