@@ -16,12 +16,6 @@ table, td
   text-align: center;
 }
 
-td a
-{
-  display: block;
-  width 100%;
-}
-
-#clicked {
+.clicked {
   background: green;
 }
