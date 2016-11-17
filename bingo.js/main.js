@@ -68,5 +68,6 @@ function cellToggle(e)
 {
   // "this" is assigned to whatever generated the event, so we can use that to
   // change the class name
-  this.className = 'clicked';
+  if (this.className == 'clicked') { this.className = ''; }
+  else { this.className = 'clicked'; }
 }
